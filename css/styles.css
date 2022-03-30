@@ -1,0 +1,37 @@
+* {
+    --brand-color: rgb(38, 130, 236);
+}
+
+html, body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: #fff;    
+}
+button {
+    color: #333;
+}
+
+.box {
+    color: white;
+    background-color: var(--brand-color);
+    margin: 10vmin;
+}
+.title {
+    color: white;
+}
+.hide {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+}
+.modal-content .title,
+.modal-content label {
+    color: #333;
+}
+.modal-content .select ,
+.modal-content select {
+    width: 100%;
+}

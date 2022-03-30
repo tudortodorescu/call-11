@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Catalog Digital Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" defer></script>
+    <script src="./js/login.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3 class="title is-3">Login</h3>
+            <div class="field">
+                <label>Email</label>
+                <input 
+                    type="email"
+                    class="input"
+                    id="email"
+                    value="todorescu.consulting@gmail.com"
+                />
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input 
+                    type="password"
+                    class="input"
+                    id="password"
+                    value="123456"
+                />
+            </div>
+            <div class="field">
+                <button class="button" id="button"> Submit </button>
+            </div>
+            <div class="login-notification notification is-primary hide">
+                <button class="delete"></button>
+                Email si parola invalide <strong>mai incearca</strong>
+              </div>
+        </div>
+    </div>
+</body>
+</html>
