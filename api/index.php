@@ -1,15 +1,7 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
-
-echo "test"
-;
-var_dump($_POST); 
-var_dump($_GET);
-die();
-
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
 
 include 'config.php'; 
 
@@ -21,10 +13,6 @@ $api = new Api( $conn );
 if ( isset($getMethod) ) {
     $api->{$getMethod}();
 }
-
-echo '<pre>';
-var_dump($_POST);
-die();
 
 class Api {
     protected $conn;
